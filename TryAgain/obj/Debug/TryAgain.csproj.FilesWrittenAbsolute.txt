@@ -13,3 +13,4 @@
 /Users/launchlabs/Projects/TryAgain/TryAgain/bin/Debug/System.Net.Http.Extensions.dll
 /Users/launchlabs/Projects/TryAgain/TryAgain/bin/Debug/ModernHttpClient.dll
 /Users/launchlabs/Projects/TryAgain/TryAgain/bin/Debug/TK.CustomMap.dll
+/Users/launchlabs/Projects/TryAgain/TryAgain/bin/Debug/SQLite.Net.dll

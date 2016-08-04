@@ -16,8 +16,9 @@ namespace TryAgain
 			this.HeightRequest = 100;
 			this.WidthRequest = 200;
 			this.BackgroundColor = Color.Transparent;
-			this.Children.Add(MainPage.button);
 			this.Children.Add(MainPage.autoComplete);
+			this.Children.Add(MainPage.button);
+
 		}
 	}
 }

@@ -28,6 +28,8 @@ namespace TryAgain.Droid
 		{
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::TryAgain.Droid.Resource.Attribute.actionBarSize;
 			global::ModernHttpClient.Resource.String.library_name = global::TryAgain.Droid.Resource.String.library_name;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::TryAgain.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::TryAgain.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -3328,6 +3330,12 @@ namespace TryAgain.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f080048
+			public const int ApplicationName = 2131230792;
+			
+			// aapt resource value: 0x7f080047
+			public const int Hello = 2131230791;
+			
 			// aapt resource value: 0x7f080014
 			public const int abc_action_bar_home_description = 2131230740;
 			
@@ -3487,8 +3495,8 @@ namespace TryAgain.Droid
 			// aapt resource value: 0x7f080043
 			public const int common_signin_button_text_long = 2131230787;
 			
-			// aapt resource value: 0x7f080047
-			public const int library_name = 2131230791;
+			// aapt resource value: 0x7f080049
+			public const int library_name = 2131230793;
 			
 			// aapt resource value: 0x7f080005
 			public const int mr_button_content_description = 2131230725;

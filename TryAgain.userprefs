@@ -1,36 +1,23 @@
 ﻿<Properties StartupItem="iOS/TryAgain.iOS.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TryAgain/MainPage.cs">
     <Files>
-      <File FileName="TryAgain/MainPage.cs" Line="71" Column="98" />
-      <File FileName="TryAgain/Form.cs" Line="19" Column="45" />
-      <File FileName="TryAgain/PlacesAutoComplete.cs" Line="29" Column="3" />
-      <File FileName="TryAgain/TryAgain.cs" Line="12" Column="15" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="10" Column="76" />
+      <File FileName="Droid/MainActivity.cs" Line="26" Column="4" />
+      <File FileName="TryAgain/TryAgain.cs" Line="10" Column="18" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="15" Column="122" />
+      <File FileName="TryAgain/MainPage.cs" Line="112" Column="16" />
+      <File FileName="TryAgain/PlacesAutoComplete.cs" Line="26" Column="39" />
       <File FileName="TryAgain/packages.config" Line="1" Column="1" />
-      <File FileName="TryAgain/ViewModel.cs" Line="16" Column="31" />
-      <File FileName="iOS/AppDelegate.cs" Line="24" Column="4" />
-      <File FileName="iOS/Entitlements.plist" />
-      <File FileName="iOS/Info.plist" />
-      <File FileName="iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="Droid/MainActivity.cs" Line="18" Column="4" />
-      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/6.1.1-1/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
+      <File FileName="TryAgain/Form.cs" Line="19" Column="45" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="TryAgain/Model/Lugars.cs" Line="18" Column="1" />
+      <File FileName="TryAgain/ListLugar.cs" Line="30" Column="6" />
+      <File FileName="TryAgain/Model/TablrAccess.cs" Line="20" Column="4" />
+      <File FileName="TryAgain/Model/SQLConnect.cs" Line="14" Column="2" />
+      <File FileName="TryAgain/SelectedMap.cs" Line="29" Column="4" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="TryAgain" expanded="True">
-            <Node name="TryAgain.Droid" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="MainActivity.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.TryAgain.Droid PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.ItemProperties.TryAgain.Droid PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean)" />
   <MonoDevelop.Ide.ItemProperties.TryAgain.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C3B3234B-BAE2-4A0E-8E64-FCE5772F4147" />
 </Properties>

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using TK.CustomMap;
 using TK.CustomMap.Api;
@@ -30,19 +32,27 @@ namespace TryAgain
 			Button btn = new Button {Text = "Show",HorizontalOptions=LayoutOptions.CenterAndExpand ,HeightRequest =50,WidthRequest=100,BackgroundColor=Color.Aqua};
 			Title = "Map";
 			RelativeLayout main = new RelativeLayout();
-			var map = new Map(
-			MapSpan.FromCenterAndRadius(
-					new Position(32, -122), Distance.FromMiles(0.3)))
-			{
-				IsShowingUser = true,
-				HeightRequest = 100,
-				WidthRequest = 960,
-				VerticalOptions = LayoutOptions.FillAndExpand
-			};
+
+		
+			//var als = App.DAUtil.AllUser();
+
+
+			//for (int i = 0; i < als.Count;i++) 
+			//{
+			//	map.Pins.Add(new Pin
+			//	{
+			//		Type = PinType.Place,
+			//		Position = new Position(als[i].Lat,als[i].Lng),
+			//		Label = als[i].Name,
+			//		Address = "sds"
+			//	});
+			//}
+
+			//map.FitMapRegionToPositions(((System.Collections.Generic.IEnumerable<Xamarin.Forms.Maps.Position>)(IEnumerable)(x)),false);
 
 			var stack = new StackLayout { Spacing = 0 };
 			//stack.Children.Add(autoComplete);
-			stack.Children.Add(map);
+			stack.Children.Add(AllMap.map);
 			main.Children.Add(stack,
 						   Constraint.RelativeToParent((p) => { return p.X; }),
 						   Constraint.RelativeToParent((p) => { return p.Y; }),
@@ -72,6 +82,13 @@ namespace TryAgain
 
 			btn.Clicked +=  (sender, e) =>
 			{
+
+				var animation = new Animation(callback: d => form.Rotation = d,
+								 start: button.Rotation,
+								 end: button.Rotation + 360,
+								 easing: Easing.SpringOut);
+				animation.Commit(form, "Loop", length: 800);
+
 				form.IsVisible = true;
 				btn.IsVisible = false;
 			};
@@ -90,7 +107,7 @@ namespace TryAgain
 					}
 
 					var positio = new Position(lat, lng);
-					map.Pins.Add(new Pin
+					AllMap.map.Pins.Add(new Pin
 					{
 						Type = PinType.Place,
 						Position = positio,
@@ -98,14 +115,38 @@ namespace TryAgain
 						Address = "sds"
 					});
 
-					map.MoveToRegion(MapSpan.FromCenterAndRadius(positio, Distance.FromMiles(15)));
+					var insert = new Lugars()
+					{
+						Name = autoComplete._entry.Text,
+						Lat = lat,
+						Lng = lng
+					};
+
+					App.DAUtil.AddUser(insert);
+					var all = App.DAUtil.AllUser();
+					var oc = new ObservableCollection<Lugars>(all);
+					Master.lista.ItemsSource = oc;
+
+					AllMap.map.MoveToRegion(MapSpan.FromCenterAndRadius(positio, Distance.FromMiles(15)));
+
+					var animation = new Animation(callback: d => btn.Rotation = d,
+								 start: button.Rotation,
+								 end: button.Rotation + 360,
+								 easing: Easing.SpringOut);
+					
+					animation.Commit(btn, "Loop", length: 800);
+				
 					form.IsVisible = false;
 					btn.IsVisible = true;
 				}
 				catch 
 				{
-
 					await DisplayAlert("---","---","OK");
+					var animation = new Animation(callback: d => btn.Rotation = d,
+								 start: button.Rotation,
+								 end: button.Rotation + 360,
+								 easing: Easing.SpringOut);
+					animation.Commit(btn, "Loop", length: 800);
 					form.IsVisible = false;
 					btn.IsVisible = true;
 				}

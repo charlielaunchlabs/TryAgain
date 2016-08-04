@@ -24,5 +24,7 @@
 /Users/launchlabs/Projects/TryAgain/iOS/bin/iPhoneSimulator/Debug/ModernHttpClient.dll
 /Users/launchlabs/Projects/TryAgain/iOS/bin/iPhoneSimulator/Debug/TK.CustomMap.dll
 /Users/launchlabs/Projects/TryAgain/iOS/bin/iPhoneSimulator/Debug/TK.CustomMap.iOSUnified.dll
+/Users/launchlabs/Projects/TryAgain/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.dll
+/Users/launchlabs/Projects/TryAgain/iOS/bin/iPhoneSimulator/Debug/SQLite.Net.Platform.XamarinIOS.Unified.dll
 /Users/launchlabs/Projects/TryAgain/iOS/bin/iPhoneSimulator/Debug/TryAgain.dll
 /Users/launchlabs/Projects/TryAgain/iOS/bin/iPhoneSimulator/Debug/TryAgain.dll.mdb

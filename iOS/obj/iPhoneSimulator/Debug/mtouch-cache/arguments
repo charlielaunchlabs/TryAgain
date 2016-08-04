@@ -54,6 +54,10 @@
 	-r \
 	/Users/launchlabs/Projects/TryAgain/packages/TK.CustomMap.1.5.0/lib/Xamarin.iOS10/TK.CustomMap.iOSUnified.dll \
 	-r \
+	/Users/launchlabs/Projects/TryAgain/packages/SQLite.Net.Core-PCL.3.1.1/lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll \
+	-r \
+	/Users/launchlabs/Projects/TryAgain/packages/SQLite.Net-PCL.3.1.1/lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Users/launchlabs/Projects/TryAgain/TryAgain/bin/Debug/TryAgain.dll \
@@ -315,6 +319,10 @@
 	/Users/launchlabs/Projects/TryAgain/packages/TK.CustomMap.1.5.0/lib/Xamarin.iOS10/TK.CustomMap.dll \
 	-r \
 	/Users/launchlabs/Projects/TryAgain/packages/TK.CustomMap.1.5.0/lib/Xamarin.iOS10/TK.CustomMap.iOSUnified.dll \
+	-r \
+	/Users/launchlabs/Projects/TryAgain/packages/SQLite.Net.Core-PCL.3.1.1/lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll \
+	-r \
+	/Users/launchlabs/Projects/TryAgain/packages/SQLite.Net-PCL.3.1.1/lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll \
 	-r \
 	/Users/launchlabs/Projects/TryAgain/TryAgain/bin/Debug/TryAgain.dll \
 	--target-framework \
